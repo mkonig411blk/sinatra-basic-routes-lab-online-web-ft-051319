@@ -6,23 +6,16 @@ class App < Sinatra::Base
   "Hello, World!"
   end
   
-  get '/name' do |name|
-    "My name is #{name}."
-    
-    erb :'name/index.html.erb'
-
+  get '/name' do
+    "My name is Margot."
   end 
   
-  get '/hometown' do |hometown|
-    "My hometown is #{hometown}."
-    
-    erb :'hometown/index.html.erb'
+  get '/hometown' do 
+    "My hometown is Dallas."
   end 
   
-  get '/favorite-song' do |song|
-    "My favorite song is #{song}."
-    
-    erb :'favorite-song/index.html.erb'
+  get '/favorite-song' do
+    "My favorite song is Mother's Daughter."
   end 
 
 end
