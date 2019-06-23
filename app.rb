@@ -15,10 +15,14 @@ class App < Sinatra::Base
   
   get '/hometown' do |hometown|
     "My hometown is #{hometown}."
+    
+    erb :'hometown/index.html.erb'
   end 
   
   get '/favorite-song' do |song|
     "My favorite song is #{song}."
+    
+    erb :'favorite-song/index.html.erb'
   end 
 
 end
