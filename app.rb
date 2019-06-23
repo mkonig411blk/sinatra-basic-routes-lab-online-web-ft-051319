@@ -8,6 +8,9 @@ class App < Sinatra::Base
   
   get '/name' do |name|
     "My name is #{name}."
+    
+    erb :'name/index.html.erb'
+
   end 
   
   get '/hometown' do |hometown|
